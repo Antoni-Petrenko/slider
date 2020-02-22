@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <script src="./asset/js/intro_init.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img class="loader" src="./asset/img/P_loading.jpg" alt="fitbit" />
+        <header>
+            <img class="date-tag" src="./asset/img/staticImg/P_date_tag.png" alt="05/05">
+            <img class="header" src="./asset/img/first_screen/P_main_copy.png"
+                alt="Cuida siempre a mama. Regalale Firbit">
+        </header>
+
+        <div class="intro">
+            <img class="P_Versa" src="./asset/img/products/P_Versa/P_Versa_Pink.png" alt="P_Versa">
+            <img class="P_Charge3" src="./asset/img/products/P_Charge3/P_Charge3_Lilac.png" alt="P_Charge3">
+            <img class="P_HR" src="./asset/img/products/P_HR/P_HR_Lilac.png" alt="P_HR">
+            <img class="pricetag" src="./asset/img/first_screen/P_intro_pricetag.png" alt="desde 149.95 euro">
+            <img class="shadow" src="./asset/img/P_shadow.png" alt="shadow">
+        </div>
+
+        <main id="slider" class="slider">
+            <div id="slides" class="slider__img-container">
+
+
+                <div class="product-container">
+                    <img class="product-container__product active" src="./asset/img/products/P_Versa/P_Versa_Pink.png"
+                        alt="P_Versa" data-id="0" />
+                    <img class="product-container__product" src="./asset/img/products/P_Versa/P_Versa_Grey.png"
+                        alt="P_Versa" data-id="1">
+                    <img class="product-container__product" src="./asset/img/products/P_Versa/P_Versa_Black.png"
+                        alt="P_Versa" data-id="2">
+                </div>
+                <div class="product-container">
+                    <img class="product-container__product active"
+                        src="./asset/img/products/P_Charge3/P_Charge3_Lilac.png" alt="P_Charge3" data-id="0" />
+                    <img class="product-container__product " src="./asset/img/products/P_Charge3/P_Charge3_Black.png"
+                        alt="P_Charge3" data-id="1" />
+                    <img class="product-container__product " src="./asset/img/products/P_Charge3/P_Charge3_Blue.png"
+                        alt="P_Charge3" data-id="2" />
+
+                </div>
+                <div class="product-container">
+                    <img class="product-container__product active" src="./asset/img/products/P_HR/P_HR_White.png"
+                        alt="P_HR" data-id="0">
+                    <img class="product-container__product" src="./asset/img/products/P_HR/P_HR_Lilac.png" alt="P_HR"
+                        data-id="1">
+                    <img class="product-container__product" src="./asset/img/products/P_HR/P_HR_Black.png" alt="P_HR"
+                        data-id="2">
+                </div>
+
+            </div>
+            <div class="controls-container">
+                <div class="control active">
+                    <div class="control-buttons" data-name="P_Versa">
+                        <div class="control-button">
+                            <input id="P_Versa0" type="radio" checked name="P_Versa" data-id="0">
+                            <label
+                                style="background-image: url(./asset/img/products/P_Versa/buttons/P_Versa_Pink_off.png);"
+                                class="control-button" for="P_Versa0">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_Versa/buttons/P_Versa_Pink_on.png);"></span>
+                            </label>
+                        </div>
+                        <div class="control-button">
+                            <input id="P_Versa1" type="radio" name="P_Versa" data-id="1">
+                            <label
+                                style="background-image: url(./asset/img/products/P_Versa/buttons/P_Versa_Grey_off.png);"
+                                class="control-button" for="P_Versa1">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_Versa/buttons/P_Versa_Grey_on.png);"></span>
+                            </label>
+                        </div>
+                        <div class="control-button">
+                            <input id="P_Versa2" type="radio" name="P_Versa" data-id="2">
+                            <label
+                                style="background-image: url(./asset/img/products/P_Versa/buttons/P_Versa_Black_off.png);"
+                                class="control-button" for="P_Versa2">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_Versa/buttons/P_Versa_Black_on.png"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <img class="lockup" src="./asset/img/products/P_Versa/P_Versa_lockup.png" alt="P_Versa">
+                    <img class="price" src="./asset/img/products/P_Versa/P_Versa_price.png" alt="P_Versa">
+                </div>
+                <div class="control" data-name="P_Charge3">
+                    <div class="control-buttons">
+                        <div class="control-button">
+                            <input id="P_Charge30" type="radio" checked name="P_Charge3" data-id="0">
+                            <label
+                                style="background-image: url(./asset/img/products/P_Charge3/buttons/P_Charge3_Lilac_off.png);"
+                                class="control-button" for="P_Charge30">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_Charge3/buttons/P_Charge3_Lilac_on.png);"></span>
+                            </label>
+                        </div>
+                        <div class="control-button">
+                            <input id="P_Charge31" type="radio" name="P_Charge3" data-id="1">
+                            <label
+                                style="background-image: url(./asset/img/products/P_Charge3/buttons/P_Charge3_Black_off.png);"
+                                class="control-button" for="P_Charge31">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_Charge3/buttons/P_Charge3_Black_on.png);"></span>
+                            </label>
+                        </div>
+                        <div class="control-button">
+                            <input id="P_Charge32" type="radio" name="P_Charge3" data-id="2">
+                            <label
+                                style="background-image: url(./asset/img/products/P_Charge3/buttons/P_Charge3_Blue_off.png);"
+                                class="control-button" for="P_Charge32">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_Charge3/buttons/P_Charge3_Blue_on.png"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <img class="lockup" src="./asset/img/products/P_Charge3/P_Charge3_lockup.png" alt="P_Charge3">
+                    <img class="disclaimer" src="./asset/img/products/P_Charge3/P_HR_disclaimer.png" alt="P_Charge3">
+                    <img class="price" src="./asset/img/products/P_Charge3/P_Charge3_price.png" alt="P_Charge3">
+                </div>
+                <div class="control" data-name="P_HR">
+                    <div class="control-buttons">
+                        <div class="control-button">
+                            <input id="P_HR0" type="radio" checked name="P_HR" data-id="0">
+                            <label style="background-image: url(./asset/img/products/P_HR/buttons/P_HR_White_off.png);"
+                                class="control-button" for="P_HR0">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_HR/buttons/P_HR_White_on.png);"></span>
+                            </label>
+                        </div>
+                        <div class="control-button">
+                            <input id="P_HR1" type="radio" name="P_HR" data-id="1">
+                            <label style="background-image: url(./asset/img/products/P_HR/buttons/P_HR_Lilac_off.png);"
+                                class="control-button" for="P_HR1">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_HR/buttons/P_HR_Lilac_on.png);"></span>
+                            </label>
+                        </div>
+                        <div class="control-button">
+                            <input id="P_HR2" type="radio" name="P_HR" data-id="2">
+                            <label style="background-image: url(./asset/img/products/P_HR/buttons/P_HR_Black_off.png);"
+                                class="control-button" for="P_HR2">
+                                <span
+                                    style="background-image: url(./asset/img/products/P_HR/buttons/P_HR_Black_on.png"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <img class="lockup" src="./asset/img/products/P_HR/P_HR_lockup.png" alt="P_HR">
+                    <img class="price" src="./asset/img/products/P_HR/P_HR_price.png" alt="P_HR">
+                </div>
+            </div>
+            <div id="prev" class="button button--left"></div>
+            <div id="next" class="button button--right"></div>
+        </main>
+
+        <footer>
+            <a class="logo" href="http://google.com/"></a>
+            <a class="buy-now" href="http://google.com/"></a>
+        </footer>
+        <div class="landscape-placeholder"></div>
+    </div>
+    <script src="./asset/js/slider.js"></script>
+</body>
+
+</html>

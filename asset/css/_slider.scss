@@ -1,0 +1,137 @@
+$btn-size: 45px;
+
+.slider {
+  width: 100%;
+  height: 72%;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+  &.active {
+    opacity: 1;
+  }
+  &__shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-image: url(../img/P_shadow.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.button {
+  width: $btn-size;
+  height: $btn-size;
+  position: fixed;
+  top: calc(30% - #{$btn-size} / 2);
+  background-size: cover;
+  &--left {
+    left: 5px;
+    background-image: url(../img/interface/P_arrow_left.png);
+  }
+  &--right {
+    right: 5px;
+    background-image: url(../img/interface/P_arrow_right.png);
+  }
+}
+
+.slider__img-container {
+  height: 70%;
+  position: fixed;
+  display: flex;
+  left: -100vw;
+}
+.slider__img-container.shifting {
+    transition: left .3s ease-in-out;
+  }
+
+.product-container {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  &__product {
+    position: absolute;
+    top: 1px;
+    width: 70vw;
+    left: calc(50% - 70% / 2);
+    transform: translateY(20px);
+    transition: transform 1s ease-in-out, opacity .3s ease-in-out;
+    opacity: 0;
+    &.active{
+      opacity: 1;
+    }
+  }
+}
+
+.slider.active .product-container__product {
+  transform: translateY(0px);
+}
+.control{
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  height: 100%;
+  pointer-events: none;
+  &.active{
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+.controls-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+}
+.control-buttons{
+  display: flex;
+  justify-content: center;
+}
+.control-button{
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: 100%;
+  margin: 0 10px;
+  label,span{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    display: block;
+  }
+  span{
+    opacity: 0;
+  }
+}
+input[type='radio']{
+  display: none;
+}
+input[type="radio"]:checked ~ .control-button span{
+  opacity: 1;
+}
+.lockup{
+  position: absolute;
+    width: 60%;
+    top: 25%;
+    left: calc(50% - 60% / 2 );
+}
+.disclaimer{
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 50% / 2);
+    width: 50%;
+}
+.price{
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}

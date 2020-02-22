@@ -1,0 +1,415 @@
+@-webkit-keyframes fromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fromBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.intro {
+  -webkit-transition: 1s .5s ease-in-out;
+  transition: 1s .5s ease-in-out;
+}
+
+.P_Versa {
+  position: absolute;
+  top: 25%;
+  left: -2%;
+  width: 65%;
+  z-index: 3;
+  -webkit-animation: fromBottom 1.5s ease-in-out;
+          animation: fromBottom 1.5s ease-in-out;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.P_Charge3 {
+  position: absolute;
+  top: 27.5%;
+  left: 30%;
+  width: 55%;
+  z-index: 2;
+  -webkit-animation: fadeIn 1.5s ease-in-out;
+          animation: fadeIn 1.5s ease-in-out;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.P_HR {
+  position: absolute;
+  top: 27.817%;
+  left: 51.25%;
+  width: 51.563%;
+  z-index: 1;
+  -webkit-animation: fromTop 1.5s ease-in-out;
+          animation: fromTop 1.5s ease-in-out;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.header {
+  position: absolute;
+  top: 11.27%;
+  left: 15.313%;
+  width: 72.19%;
+  opacity: 0;
+  -webkit-animation: fadeIn 1.3s 0.2s ease-in-out forwards;
+          animation: fadeIn 1.3s 0.2s ease-in-out forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.pricetag {
+  position: absolute;
+  bottom: 14.437%;
+  left: 34.063%;
+  width: 35%;
+  opacity: 0;
+  -webkit-animation: fadeIn 1.3s 0.2s ease-in-out forwards;
+          animation: fadeIn 1.3s 0.2s ease-in-out forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.shadow {
+  position: absolute;
+  bottom: 32%;
+  left: 25%;
+  width: 50%;
+  height: 7%;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.9s 0.6s ease-in-out forwards;
+          animation: fadeIn 0.9s 0.6s ease-in-out forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.slider {
+  width: 100%;
+  height: 72%;
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.slider.active {
+  opacity: 1;
+}
+
+.slider__shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-image: url(../img/P_shadow.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  top: calc(30% - 45px / 2);
+  background-size: cover;
+}
+
+.button--left {
+  left: 5px;
+  background-image: url(../img/interface/P_arrow_left.png);
+}
+
+.button--right {
+  right: 5px;
+  background-image: url(../img/interface/P_arrow_right.png);
+}
+
+.slider__img-container {
+  height: 70%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: -100vw;
+}
+
+.slider__img-container.shifting {
+  -webkit-transition: left .3s ease-in-out;
+  transition: left .3s ease-in-out;
+}
+
+.product-container {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+}
+
+.product-container__product {
+  position: absolute;
+  top: 1px;
+  width: 70vw;
+  left: calc(50% - 70% / 2);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity .3s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity .3s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, opacity .3s ease-in-out;
+  transition: transform 1s ease-in-out, opacity .3s ease-in-out, -webkit-transform 1s ease-in-out;
+  opacity: 0;
+}
+
+.product-container__product.active {
+  opacity: 1;
+}
+
+.slider.active .product-container__product {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.control {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  height: 100%;
+  pointer-events: none;
+}
+
+.control.active {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.controls-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+}
+
+.control-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.control-button {
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: 100%;
+  margin: 0 10px;
+}
+
+.control-button label, .control-button span {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100%;
+  display: block;
+}
+
+.control-button span {
+  opacity: 0;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .control-button span {
+  opacity: 1;
+}
+
+.lockup {
+  position: absolute;
+  width: 60%;
+  top: 25%;
+  left: calc(50% - 60% / 2);
+}
+
+.disclaimer {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 50% / 2);
+  width: 50%;
+}
+
+.price {
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+}
+
+.date-tag {
+  position: absolute;
+  top: 0px;
+  left: 2.5%;
+  width: 33.5%;
+}
+
+.buy-now {
+  position: absolute;
+  bottom: 1.8%;
+  right: 1.45%;
+  width: 49%;
+  height: 7%;
+  background-image: url(../img/staticImg/P_CTA.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo {
+  position: absolute;
+  bottom: 1.8%;
+  left: 3.47%;
+  width: 35%;
+  height: 7%;
+  background-image: url(../img/staticImg/P_fitbit_logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../asset/img/staticImg/P_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.landscape-placeholder {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/not_available.png);
+  background-color: white;
+  z-index: 101;
+}
+
+@media screen and (orientation: landscape) {
+  .landscape-placeholder {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */

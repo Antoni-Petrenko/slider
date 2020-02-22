@@ -1,0 +1,45 @@
+@import './intro';
+@import './slider';
+@import './background-screen';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../asset/img/staticImg/P_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 1s;
+}
+.landscape-placeholder{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-size:25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/not_available.png);
+    background-color: white;
+    z-index:101;
+}
+
+@media screen and (orientation:landscape){
+    .landscape-placeholder{
+        display: block;
+    }
+}

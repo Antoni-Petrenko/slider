@@ -1,0 +1,63 @@
+@import'./intro-animations';
+
+$animation-time:1.5s;
+.intro{
+    transition: 1s .5s ease-in-out;
+}
+.P_Versa{
+    position: absolute;
+    top: 25%;
+    left: -2%;
+    width: 65%;
+    z-index: 3;
+    animation: fromBottom $animation-time ease-in-out;
+    animation-play-state: paused;
+}
+.P_Charge3{
+    position: absolute;
+    top: 27.5%;
+    left: 30%;
+    width: 55%;
+    z-index: 2;
+    animation: fadeIn $animation-time ease-in-out;
+    animation-play-state: paused;
+}
+.P_HR{
+    position: absolute;
+    top: 27.817%;
+    left: 51.25%;
+    width: 51.563%;
+    z-index: 1;
+    animation: fromTop $animation-time ease-in-out;
+    animation-play-state: paused;
+}
+.header{
+    position: absolute;
+    top: 11.27%;
+    left: 15.313%;
+    width: 72.19%;
+    opacity: 0;
+    animation: fadeIn $animation-time - .2s .2s  ease-in-out forwards ;
+    animation-play-state: paused;
+}
+.pricetag{
+    position: absolute;
+    bottom: 14.437%;
+    left: 34.063%;
+    width: 35%;
+    opacity: 0;
+    animation: fadeIn $animation-time - 0.2s .2s ease-in-out forwards ;
+    animation-play-state: paused;
+}
+.shadow{
+    position: absolute;
+    bottom: 32%;
+    left: 25%;
+    width: 50%;
+    height: 7%;
+    opacity: 0;
+    animation: fadeIn $animation-time - 0.6s .6s ease-in-out forwards  ;
+    animation-play-state: paused;
+}
+
+
