@@ -24,4 +24,4 @@
       slider.classList.add("active");
     });
   };
-});
+})();
