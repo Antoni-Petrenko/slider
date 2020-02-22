@@ -136,10 +136,8 @@ function slide(items, prev, next) {
       );
     prevImg.forEach(img => img.classList.remove("active"));
 
-    prevImg.forEach(img =>
-      img.addEventListener("transitionend", () =>
-        currentImg.forEach(img => img.classList.add("active"))
-      )
+    currentImg.forEach(img =>
+      setTimeout(()=>img.classList.add('active'),400)
     );
   }
 }

@@ -135,3 +135,9 @@ input[type="radio"]:checked ~ .control-button span{
     bottom: 0;
     right: 2%;
 }
+.shadow--control-section{
+  @extend .shadow;
+  opacity: 1;
+  top:-30%;
+  height: 30%;
+}
